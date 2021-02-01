@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="index.css">
+
+<body>
+
+    <div class="container">
+        <div class="title">
+            <h1>SIS Phuket</h1>
+        </div>
+
+        <div class="input">
+            <form>
+                <label for="fname">PSU Passport:</label>
+                <input type="text" id="id1" placeholder="PSU Passport" value=""><br>
+                <label for="lname">Password:</label>
+                <input type="password" id="id2" placeholder="Password" value=""><br><br>
+        </div>
+
+        <div class="signin">
+            <button onclick="test()">Sign in</button>
+        </div>
+    </div>
+    </form>
+    <script>
+
+
+        function test() {
+            var p1 = document.getElementById("id1").value;
+            var p2 = document.getElementById("id2").value;
+            console.log("show =>", p1)
+            console.log("show =>", p2)
+            if(p1 === "foo" && p2 ==="bar"){
+                alert("Correct")
+            }
+            else{
+                alert("Incorrect")
+            }
+            
+        };
+
+        
+    </script>
+
+</body>
+
+</html>
